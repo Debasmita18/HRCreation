@@ -1,0 +1,45 @@
+{
+	"current":
+                     [
+                             {
+		"name": "Vedant",
+        "ID": "C101",
+		"Leaves Left": "14",
+		"Sick Leaves": "1",
+		"Casual Leaves": "4",
+		"Total Leaves": "5"
+	           }, 
+                             {
+		"name": "Debasmita",
+        "ID": "C102",
+		"Leaves Left": "13",
+		"Sick Leaves": "1",
+		"Casual Leaves": "4",
+		"Total Leaves": "5"
+	          },
+                            {
+		"name": "Akoparna",
+        "ID": "W103",
+		"Leaves Left": "12",
+		"Sick Leaves": "2",
+		"Casual Leaves": "4",
+		"Total Leaves": "6"
+	         },
+                           {
+		"name": "Ankita",
+        "ID": "B104",
+		"Leaves Left": "17",
+		"Sick Leaves": "1",
+		"Casual Leaves": "0",
+		"Total Leaves": "1"
+	        },
+                          {
+		"name": "Sana",
+        "ID": "P105",
+		"Leaves Left": "12",
+		"Sick Leaves": "0",
+		"Casual Leaves": "6",
+		"Total Leaves": "6"
+            }
+                  ]
+}

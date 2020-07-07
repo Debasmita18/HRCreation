@@ -1,0 +1,126 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - leave
+  - faq
+  - leave_types
+  - holidays
+  - sl
+  - cl
+  - employee_id
+  - no_of_leaves
+  - applyleave
+  - thanks
+  
+entities:
+  - name
+  - ids
+  - days
+
+slots:
+  name:
+    type: text
+  ids:
+    type: text
+    auto_fill: False
+  days:
+    type: text
+    auto_fill: False
+  
+ 
+    
+actions:
+- utter_goodbye
+- utter_ask_name
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_iamabot
+- utter_ask_faq
+- utter_types
+- utter_sleave
+- utter_cleave
+- utter_holidays_types
+- action_leave
+- utter_ask_id
+- utter_submit
+- action_days
+- action_leaves_submit
+- action_submit
+- utter_days
+
+responses:
+  utter_greet:
+  - buttons:
+    - payload: /leave
+      title: Leave Details
+    - payload: /applyleave
+      title: Apply Leave
+    - payload: /faq
+      title: FAQ
+    text: How may I assist you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+    
+  utter_ask_id:
+  - text: "What is your employee id?"
+
+  utter_days:
+  - text: "No. of days you want leaves for?"
+  
+  utter_submit:
+  - text: "Would you like to submit these details?"
+  
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Okay , Bye ! Wish to see you again .
+  utter_iamabot:
+  - text: I am the HR ChatBot . Nice to meet you
+  utter_ask_name:
+  - text: Tell me your username
+  utter_ask_faq:
+  - buttons:
+    - payload: /leave_types
+      title: Leave Types
+    - payload: /holidays
+      title: Holidays
+    text: Choose what do you want to know
+    
+  utter_return:
+  - text: "You're most welcome . Happy to help you."
+  utter_types:
+  - buttons:
+    - payload: /sl
+      title: Sick Leave
+    - payload: /cl
+      title: Casual Leave
+    text: Choose what do you want to know
+  utter_sleave:
+  - text: "Sick leave is paid time off from work that workers can use to stay home\
+      \ to address their health needs without losing pay.\nNB:You can take paid sick\
+      \ leave for yourself or a family member, for preventive care or diagnosis, care\
+      \ or treatment of an existing health condition, or for specified purposes if\
+      \ you are a victim of domestic violence, sexual assault or stalking."
+  utter_cleave:
+  - text: These leave are granted for certain unforeseen situation or were you are
+      require to go for one or two days leaves.
+  utter_holidays_types:
+  - text: "23rd January : Netaji's Birthday\n 26th January : Republic Day\n 15th April\
+      \ : Bengali New year\n 1st May : Labourers' Day\n 15th August : Independence\
+      \ Day\n 17th September : Mahalaya\n 2nd October : Gandhi Birthday\n 22nd Octber-31st\
+      \ October : Durga Puja\n 25th December : Christmas\n 31st December: Year Ending\
+      \ Day\n"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
